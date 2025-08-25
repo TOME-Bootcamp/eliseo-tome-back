@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Clean Code",
+    "coverUrl": "https://example.com/cleancode.jpg",
+    "author": "Robert C. Martin",
+    "synopsis": "A Handbook of Agile Software Craftsmanship",
+    "isbn": "9780132350884",
+    "year": 2008,
+    "publisher": "Prentice Hall",
+    "language": "en",
+    "pages": 464,
+    "tags": ["software", "craftsmanship"]
+  },
+  {
+    "title": "El nombre del viento",
+    "coverUrl": "https://example.com/kvothe.jpg",
+    "author": "Patrick Rothfuss",
+    "synopsis": "La historia de Kvothe",
+    "isbn": "9788499082479",
+    "year": 2007,
+    "publisher": "Plaza & Janés",
+    "language": "es",
+    "pages": 880,
+    "tags": ["fantasía"]
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "coverUrl": "https://example.com/ddia.jpg",
+    "author": "Martin Kleppmann",
+    "synopsis": "The big ideas behind reliable, scalable systems",
+    "isbn": "9781449373320",
+    "year": 2017,
+    "publisher": "O'Reilly",
+    "language": "en",
+    "pages": 616,
+    "tags": ["data", "systems"]
+  }
+]
