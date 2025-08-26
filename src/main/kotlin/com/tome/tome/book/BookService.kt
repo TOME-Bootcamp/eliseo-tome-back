@@ -1,7 +1,6 @@
 package com.tome.tome.book
 
 import com.tome.tome.book.exceptions.BookAlreadyExistsException
-import com.tome.tome.bookDataDTO.BookDTO
 import org.springframework.stereotype.Service
 import java.util.UUID
 
@@ -34,6 +33,10 @@ class BookService(private val bookRepo: BookRepo) {
     }
     fun deleteBook(bookId: UUID) {
         bookRepo.deleteById(bookId)
+    }
+
+    fun getAllBooks(): List<Book> {
+        return bookRepo.findAll()
     }
 }
 

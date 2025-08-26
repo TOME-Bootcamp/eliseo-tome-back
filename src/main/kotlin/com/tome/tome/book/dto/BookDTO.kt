@@ -1,4 +1,4 @@
-package com.tome.tome.bookDataDTO
+package com.tome.tome.book.dto
 
 import java.util.UUID
 

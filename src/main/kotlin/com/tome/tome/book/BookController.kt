@@ -1,8 +1,10 @@
 package com.tome.tome.book
 
+import com.tome.tome.book.dto.BookDTO
+import com.tome.tome.book.dto.BookDataDTO
 import com.tome.tome.book.exceptions.BookAlreadyExistsException
-import com.tome.tome.bookDataDTO.BookDTO
 import com.tome.tome.toDTO
+import com.tome.tome.toDataDTO
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
@@ -20,7 +22,7 @@ import java.util.UUID
 
 
 @RestController
-@RequestMapping("/book")
+@RequestMapping("/books")
 class BookController(private val bookService: BookService) {
 
     private fun findBookOrThrow(bookId: UUID): Book {
@@ -29,8 +31,8 @@ class BookController(private val bookService: BookService) {
     }
 
     @GetMapping
-    fun getAllBooksDTO(): List<BookDTO> {
-        return bookService.findByTitle("").map(::toDTO) // Devuelve todos los libros
+    fun getAllBooksDTO(): List<BookDataDTO> {
+        return bookService.getAllBooks().map(::toDataDTO)
     }
 
     @GetMapping("/{bookId}")
