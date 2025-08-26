@@ -10,7 +10,7 @@ import java.util.UUID
 
 @Entity
 class Publisher(
-    val name: String? = null
+    val name: String
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

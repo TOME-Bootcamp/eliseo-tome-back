@@ -9,7 +9,7 @@ import jakarta.persistence.ManyToMany
 import java.util.UUID
 
 @Entity
-class Tag (val name: String? = null
+class Tag (val name: String
 ){
 
     @Id

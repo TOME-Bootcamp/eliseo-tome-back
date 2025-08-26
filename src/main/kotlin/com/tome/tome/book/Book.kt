@@ -47,7 +47,7 @@ class Book(
         inverseJoinColumns = [JoinColumn(name = "publisher_id")] // FK hacia Publisher
     )
 
-    val publishers: List<Publisher>? = emptyList(),
+    val publishers: List<Publisher> = emptyList(),
 
     @ManyToMany
     @JoinTable(
@@ -56,7 +56,7 @@ class Book(
         inverseJoinColumns = [JoinColumn(name = "language_id")] // FK hacia Language
     )
 
-    val languages: List<Language>? = emptyList(), // Assuming Language is a String, otherwise create a Language entity
+    val languages: List<Language> = emptyList(), // Assuming Language is a String, otherwise create a Language entity
     @Column()
     val pages: Int,
 
@@ -66,7 +66,7 @@ class Book(
         joinColumns = [JoinColumn(name = "book_id")],          // FK hacia Book
         inverseJoinColumns = [JoinColumn(name = "tag_id")]     // FK hacia Tag
     )
-    val tags: List<Tag>? = emptyList(),
+    val tags: List<Tag> = emptyList(),
 ) {
     // Additional methods or properties can be added here if needed
 }
