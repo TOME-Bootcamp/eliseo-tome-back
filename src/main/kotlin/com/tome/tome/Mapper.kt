@@ -21,3 +21,4 @@ fun toDataDTO(book: Book) = com.tome.tome.book.dto.BookDataDTO(
     pages = book.pages,
     tags = book.tags.map { it.name }
 )
+
